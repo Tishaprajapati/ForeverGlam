@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="loginpage.css">
-    
+    <script src="login.js"></script>
     
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
@@ -38,21 +38,31 @@
                 <div class="input-feild" id="nameFeild">
                     <i class="fa-solid fa-user"></i>
                     
-                    <input type="text" placeholder="Name">
+                    <input type="text" id="nameInput" placeholder="Name">
                 </div>
 
                 <div class="input-feild">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="email" placeholder="Email">
+                    <input type="email" id="emailInput" placeholder="Email">
                 </div>
 
                 <div class="input-feild">
                     <i class="fa-solid fa-lock"></i>
-                    <input type="password" placeholder="Password">
+                    <input type="password" id="passwordInput" placeholder="Password">
                 </div>
 
-                <p> Forgot Password ?|<a href="#">    Click Here</a></p>
+                <p> Forgot Password ?|<a href="#">    Click Here</a><br><br></p>
+
+                <div class="submit">
+                    <button id="subButton" onclick="validateInput()">Submit</button><br><br><br><br>
+                </div>
             </div>
+
+           
+            <p id="message"></p>
+        
+            <script src="java.js"></script>
+           
           
             <div class="btn-feild">
                 <button type="button" id="signupbtn">Sign Up</button>
